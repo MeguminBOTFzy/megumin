@@ -1094,21 +1094,6 @@ reply(String(e))
       msg.mek[Object.keys(msg.mek)[0]].viewOnce = false;
       kurr.copyNForward(m.chat, msg);
     }
-    if (isGroup && autojoin == true) {
-      if (budy.includes("://chat.whatsapp.com/")) {
-        console.log(
-          color("[AUTO-JOIN]", "red"),
-          color("YAHAHAHHAHAH", "white")
-        );
-        kurr.query({
-          json: [
-            "action",
-            "invite",
-            `${budy.replace("https://chat.whatsapp.com/", "")}`,
-          ],
-        });
-      }
-    }
 			// MUTE
         if (isMuted){
             if (!isGroupAdmins && !isOwner && !mek.key.fromMe) return
@@ -3756,6 +3741,35 @@ emror = String(e)
 reply(`${e}`)
 }
 break
+case 'addbucin':
+                if (!isOwner) return reply(mess.only.ownerB)
+				huu = body.slice(10)
+						bucinrandom.push(huu)
+						fs.writeFileSync('./database/bucin.json', JSON.stringify(bucinrandom))
+						reply(`Sukses, Kata \n*${huu}*\n Telah Ditambahkan ke database`)
+					break
+					case 'bucin':
+					if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+						hasil = bucinrandom[Math.floor(Math.random() * (bucinrandom.length))]
+						kurr.sendMessage(from, '*'+hasil+'*', text, {quoted: ftex})
+					break
+					case 'bacotandilan':
+					case 'dilan':
+					if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+						hasil = randomdilan[Math.floor(Math.random() * (randomdilan.length))]
+						kurr.sendMessage(from, '*'+hasil+'*\n\n~ *Dilan*', text, {quoted: ftok})
+					break
+					case 'hekerbucin':
+					if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+				hasil = hekerbucin[Math.floor(Math.random() * (hekerbucin.length))]
+				kurr.sendMessage(from, '*'+hasil+'*', text, {quoted: ftrol})
+				break 
+				case 'katailham':
+				case 'ilham':
+				if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+				hasil = katailham[Math.floor(Math.random() * (katailham.length))]
+				kurr.sendMessage(from, '*'+hasil+'*', text, {quoted: ftrol})
+				break 
 case 'sharelock':
  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 kntl = `${args.join(' ')}`
