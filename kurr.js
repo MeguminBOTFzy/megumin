@@ -342,6 +342,7 @@ try {
 		const isAntiWame = isGroup ? antiwame.includes(from) : false
 		 const isAntivirtex = isGroup ? antivirtex.includes(from) : false
 		const isAntiLink = isGroup ? antilink.includes(from) : false
+		const isAntilink = isGroup ? antilink.includes(from) : false
 		const isAntiviewonce = isGroup ? antivo.includes(from) : false
 		const isWelkom = isGroup ? welkom.includes(from) : false
 		const isAuto = isGroup ? autosticker.includes(from) : false
