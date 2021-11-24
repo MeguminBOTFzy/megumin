@@ -8,7 +8,7 @@ const Crypto = require('crypto')
 const { fromBuffer } = require('file-type')
 const FormData = require('form-data')
 
-exports.getBuffer = getBuffer = async (url, options) => {
+const getBuffer = async (url, options) => {
 	try {
 		options ? options : {}
 		const res = await axios({
