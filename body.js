@@ -89,7 +89,7 @@ const fake = fs.readFileSync('./logo.jpg')
 const thumb = fs.readFileSync('./logo.jpg')
 const bgg = fs.readFileSync('./logo.jpg')
 const voting = JSON.parse(fs.readFileSync("./lib/voting.json"));
-virgam = fs.readFileSync(`./message/virgam.jpeg`)
+virgam = fs.readFileSync("./message/virgam.jpeg")
 virgamv2 = fs.readFileSync("./message/punyathunder.jpeg")
 virgamv3 = fs.readFileSync("./message/kon.jpg")
 
@@ -376,8 +376,6 @@ const checkRegisteredUser = (sender) => {
     const groupName = isGroup ? groupMetadata.subject : "";
     const groupId = isGroup ? groupMetadata.jid : "";
     const itsMe = kurz.key.fromMe ? true : false
-    const isRegistered = checkRegisteredUser(sender)
-   const isRegister = register.includes(sender)
     const groupMembers = isGroup ? groupMetadata.participants : "";
     const groupDesc = isGroup ? groupMetadata.desc : "";
     const isOwner = ownerNumber.includes(sender)
@@ -475,7 +473,7 @@ const math = (teks) => {
       key: {
         fromMe: false,
         participant: "0@s.whatsapp.net",
-        remoteJid: "6289523258649-1604595598@g.us",
+        remoteJid: "6281333782061-1617740713@g.us",
       },
       message: {
         orderMessage: {
@@ -484,22 +482,22 @@ const math = (teks) => {
           thumbnail: iye,
           surface: 200,
           message: iye,
-          orderTitle: "BODY BOTZ",
+          orderTitle: "MeguminBOT",
           sellerJid: "0@s.whatsapp.net",
         },
       },
       contextInfo: { forwardingScore: 999, isForwarded: true },
       sendEphemeral: true,
     };
-const freply = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { "contactMessage": { "displayName": `${pushname}`, "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${senderr.split('@')[0]}:${senderr.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, "jpegThumbnail":fs.readFileSync('./logo.jpg')
+const freply = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: '6281333782061@s.whatsapp.net' } : {}) }, message: { "contactMessage": { "displayName": `${pushname}`, "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${senderr.split('@')[0]}:${senderr.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, "jpegThumbnail":fs.readFileSync('./logo.jpg')
         }}}
-const freply7 = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: '1595603042@s.whatsapp.net' } : {}) }, message: { "productMessage":{"product": {"productImage": {"mimetype":'image/jpeg',"jpegThumbnail": iye, "title": `${ucapanWaktu} ${pushname}`, "productImageCount": 1 }, "businessOwnerJid": `0@s.whatsapp.net` }}}
+const freply7 = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: '6281333782061@s.whatsapp.net' } : {}) }, message: { "productMessage":{"product": {"productImage": {"mimetype":'image/jpeg',"jpegThumbnail": iye, "title": `${ucapanWaktu} ${pushname}`, "productImageCount": 1 }, "businessOwnerJid": `0@s.whatsapp.net` }}}
 }
  const fkontak = { 
                   key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `0@s.whatsapp.net` } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./database/group/logo.jpg')}}}
             //FAKE STICKER
             const fsticker = {
-                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},"message": {"stickerMessage": { "url": "https://mmg.whatsapp.net/d/f/Am6FBfNf-E2f1VoGBXkPaNAy7L6Tw_HMavKrHEt48QM4.enc","fileSha256": "Yfj8SW7liSEnDakvyVlXVZQ1LJBC9idn09X7KHe8HTc=","fileEncSha256": "F854aUrzgAkBTOVULpne4oSIi6S04Jo56pjZEo+p+9U=","mediaKey": "Z3nA2asclAAwWHngNO/vJ81qxOE2/0gkEnXak+NxPV4=","mimetype": "image/webp","height": 64,"width": 64,"directPath": "/v/t62.15575-24/12097272_1193895144391295_8973688483514349023_n.enc?ccb=11-4&oh=5a9d7147627a8355569f1a641b9ebee3&oe=60C65E73","fileLength": "7186","mediaKeyTimestamp": "1622815545","isAnimated": false}}}
+                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6281333782061@s.whatsapp.net" } : {})},"message": {"stickerMessage": { "url": "https://mmg.whatsapp.net/d/f/Am6FBfNf-E2f1VoGBXkPaNAy7L6Tw_HMavKrHEt48QM4.enc","fileSha256": "Yfj8SW7liSEnDakvyVlXVZQ1LJBC9idn09X7KHe8HTc=","fileEncSha256": "F854aUrzgAkBTOVULpne4oSIi6S04Jo56pjZEo+p+9U=","mediaKey": "Z3nA2asclAAwWHngNO/vJ81qxOE2/0gkEnXak+NxPV4=","mimetype": "image/webp","height": 64,"width": 64,"directPath": "/v/t62.15575-24/12097272_1193895144391295_8973688483514349023_n.enc?ccb=11-4&oh=5a9d7147627a8355569f1a641b9ebee3&oe=60C65E73","fileLength": "7186","mediaKeyTimestamp": "1622815545","isAnimated": false}}}
             //FAKE VN
 const ftrol = {
 	key : {
@@ -542,7 +540,7 @@ const finv = {
 	},
 	"message": {
 		"groupInviteMessage": {
-			"groupJid": "6288213840883-1616169743@g.us",
+			"groupJid": "6281333782061-1617740713@g.us",
 			"inviteCode": `${ucapanWaktu} ${pushname}`,
 			"groupName": `${ucapanWaktu} ${pushname}`, 
             "caption": `${ucapanWaktu} ${pushname}`, 
@@ -556,8 +554,8 @@ const finv = {
     };
     const fvn = {
       key: {
-        participant: `16505434800@s.whatsapp.net`,
-        ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {}),
+        participant: `6281333782061@s.whatsapp.net`,
+        ...(from ? { remoteJid: "6281333782061-1617740713@g.us" } : {}),
       },
       message: {
         audioMessage: {
@@ -570,7 +568,7 @@ const finv = {
     const fgif = {
       key: {
         participant: `0@s.whatsapp.net`,
-        ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {}),
+        ...(from ? { remoteJid: "6281333782061-1617740713@g.us" } : {}),
       },
       message: {
         videoMessage: {
@@ -612,7 +610,7 @@ const fstick = {
       key: { participant: "0@s.whatsapp.net", remoteJid: "0@s.whatsapp.net" },
       message: {
         groupInviteMessage: {
-          groupJid: "6288213840883-1616169743@g.us",
+          groupJid: "6281333782061-1617740713@g.us",
           inviteCode: "m",
           groupName: "P",
           caption: fake,
@@ -624,7 +622,7 @@ const fvid = {
 	 key: { 
           fromMe: false,
 	      participant: `628551000185@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "6281333782061-1617740713@g.us" } : {}) 
                 },
 	 message: { 
                  "videoMessage": { 
@@ -640,7 +638,7 @@ const ftex = {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "6281333782061-1617740713@g.us" } : {}) 
                 },
 	 message: { 
 		"extendedTextMessage": {
@@ -697,7 +695,7 @@ const ftex = {
           key: {
             fromMe: false,
             participant: `0@s.whatsapp.net`,
-            ...(from ? { remoteJid: "6289523258649-1604595598@g.us" } : {}),
+            ...(from ? { remoteJid: "6281333782061-1617740713@g.us" } : {}),
           },
           message: {
             imageMessage: {
@@ -3065,7 +3063,7 @@ if (!kurz.key.fromMe && !isOwner) return
             imeg = fs.readFileSync('src/catalog3.jpg')
     kurzxd.sendMessage('status@broadcast', imeg, image, { caption: '𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨠 kurzxd X' ,thumbnail: virgam})
  kurzxd.sendMessage('status@broadcast', imeg, image, { caption: '𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨠 kurzxd X' ,thumbnail: virgamv2})
- kurzxd.sendMessage('status@broadcast', imeg, image, { caption: '𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨠 kurzxd X' ,thumbnail: virgamv3})
+ kurzxd.sendMessage('status@broadcast', imeg, image, { caption: '𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅??𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨠 kurzxd X' ,thumbnail: virgamv3})
  kurzxd.sendMessage('status@broadcast', imeg, image, { caption: '𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨠 kurzxd X' ,thumbnail: virgam})
  kurzxd.sendMessage('status@broadcast', imeg, image, { caption: '𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨠 kurzxd X' ,thumbnail: virgamv2})
  kurzxd.sendMessage('status@broadcast', imeg, image, { caption: '𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨹𐨸𐨸𐨸𐨸𐨁𐨁𐨁𐨁𐨁𐨁𐨅𐨆𐨆𐨆𐨆𐨅𐨆𐨅𐨂𐨁𐨆𐨁𐨅𐨂𐨅𐨂𐨆𐨅𐨁𐨂𐨂𐨂𐨂𐨂𐨂𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨁𐨅𐨁𐨆𐨂𐨆𐨆𐨆𐨆𐨆𐨆𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨅𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨁𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨆𐨠 kurzxd X' ,thumbnail: virgamv3})
